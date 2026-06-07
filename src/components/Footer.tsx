@@ -6,9 +6,9 @@
  */
 
 const footerLinks = {
-  Comics: ["Latest Issues", "Back Issues", "Collections", "Digital"],
-  Heroes: ["Flava", "Cipher", "Ironveil", "Full Roster"],
-  Studio: ["About Us", "Careers", "Press Kit", "Contact"],
+  Comics: ["Issue #1 — Free", "Volume 1", "Coming Soon", "Read Online"],
+  Heroes: ["Brio", "Force", "Lavique", "Sentinel"],
+  Studio: ["About", "North20 Studios", "Press Kit", "Contact"],
 };
 
 export default function Footer() {
@@ -69,7 +69,7 @@ export default function Footer() {
                     marginTop: "2px",
                   }}
                 >
-                  URBAN SUPERHERO UNIVERSE
+                  A NORTH20 STUDIOS IMPRINT
                 </div>
               </div>
             </div>
@@ -84,13 +84,12 @@ export default function Footer() {
                 maxWidth: "320px",
               }}
             >
-              Original superhero comics rooted in urban culture. The streets
-              deserve their own mythology.
+              Original superhero comics. Free first issue. Owned platform. Characters built from the community up.
             </p>
 
             {/* Social links */}
             <div className="flex gap-3">
-              {["TW", "IG", "YT", "DC"].map((social) => (
+              {["IG", "YT"].map((social) => (
                 <button
                   key={social}
                   className="w-9 h-9 flex items-center justify-center transition-all duration-200"
@@ -172,8 +171,7 @@ export default function Footer() {
               letterSpacing: "0.05em",
             }}
           >
-            © 2024 Vigil Studios. All rights reserved. All characters are
-            fictional.
+            © 2022–2026 North20 Studios / Gino Rodrigues. All rights reserved. All characters are fictional.
           </div>
           <div className="flex gap-6">
             {["Privacy", "Terms", "Press"].map((item) => (

@@ -8,7 +8,7 @@
  */
 import { useEffect, useRef } from "react";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663714891856/9eqp4adEMH963JomsoYtbu/vigil-hero-bg-ajfm2axtmTzn4DtPkAST48.webp";
+const HERO_BG = "/images/bg/hero-bg.webp";
 const TEAM_ACTION = "/images/story%20books/heros%20in%20action.png";
 
 export default function HeroSection() {
@@ -82,7 +82,7 @@ export default function HeroSection() {
                 className="w-8 h-0.5"
                 style={{ background: "oklch(0.62 0.22 42)" }}
               />
-              <span className="issue-badge">Vigil Studios Presents</span>
+              <span className="issue-badge">Vigil Studios — A North20 Studios Imprint</span>
             </div>
 
             {/* Main title */}
@@ -149,9 +149,7 @@ export default function HeroSection() {
                 animationFillMode: "forwards",
               }}
             >
-              Vigil Studios brings you original urban superheroes — characters
-              forged in the concrete, the struggle, and the spirit of the city.
-              Real stories. Real power.
+              Four Black professionals. One ancient AI buried beneath their neighborhood. A corporation built to hide it. The accident brought them together. Now they're the only thing standing between the city and what's still running underground.
             </p>
 
             {/* CTA buttons */}
@@ -167,13 +165,13 @@ export default function HeroSection() {
                 className="btn-vigil-primary"
                 onClick={() => scrollToSection("#comics")}
               >
-                Explore Comics
+                Read Issue #1 Free
               </button>
               <button
                 className="btn-vigil-secondary"
                 onClick={() => scrollToSection("#heroes")}
               >
-                Meet The Heroes
+                Meet The Team
               </button>
             </div>
 
@@ -187,9 +185,9 @@ export default function HeroSection() {
               }}
             >
               {[
-                { value: "12+", label: "Heroes" },
-                { value: "40+", label: "Issues" },
-                { value: "1M+", label: "Readers" },
+                { value: "VOL 1", label: "Now Available" },
+                { value: "FREE", label: "Issue #1" },
+                { value: "18", label: "Issues Planned" },
               ].map((stat) => (
                 <div key={stat.label} className="flex flex-col">
                   <span

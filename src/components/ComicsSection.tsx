@@ -7,80 +7,60 @@
  */
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-const EMBLEM_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663714891856/9eqp4adEMH963JomsoYtbu/vigil-emblem-bg-9LboakqBbspEZAze3oMarx.webp";
+const EMBLEM_BG = "/images/bg/emblem-bg.webp";
 
 const issues = [
   {
     id: 1,
-    series: "BOSS",
+    series: "CRESTVIEW — VOLUME 1",
     issue: "#001",
-    title: "The Executive",
-    description: "John built an empire in the boardroom. Now he's building something else entirely — in the streets.",
-    image: "/images/boss/boss%20in%20gear.png",
+    title: "The Accident",
+    description: "An explosion at the Crestview Development site. Four people changed. An AI still running underground. Nobody knows what it was building — or that the accident didn't stop it.",
+    image: "/images/story%20books/heros%20in%20action.png",
     rating: "T+",
     pages: 48,
     accent: "oklch(0.88 0.28 142)",
     featured: true,
+    free: true,
   },
   {
     id: 2,
-    series: "BOSS",
+    series: "CRESTVIEW — VOLUME 1",
     issue: "#002",
-    title: "Meeting With the Government",
-    description: "John takes the fight to the top. When power brokers won't listen, Boss makes them.",
-    image: "/images/story%20books/boss%20meeting%20the%20govt.png",
+    title: "Coming Soon",
+    description: "The investigation deepens. The missing persons. The lockdown. What Crestview was really building beneath the city.",
+    image: "/images/boss/boss%20in%20gear.png",
     rating: "T+",
-    pages: 44,
+    pages: 0,
     accent: "oklch(0.88 0.28 142)",
     featured: false,
+    free: false,
   },
   {
     id: 3,
-    series: "BOSS",
+    series: "CRESTVIEW — VOLUME 1",
     issue: "#003",
-    title: "The Weight of the Mission",
-    description: "Every decision has a cost. John weighs them all — and steps forward anyway.",
+    title: "Coming Soon",
+    description: "Marcus Hill. The first name in John's folder. Taken at seventeen. Two years with the AI. Now nineteen and something else entirely.",
     image: "/images/story%20books/boss%20thinking%20about%20mission.png",
     rating: "T+",
-    pages: 52,
+    pages: 0,
     accent: "oklch(0.88 0.28 142)",
     featured: false,
+    free: false,
   },
   {
     id: 4,
-    series: "VIGIL UNIVERSE",
-    issue: "#001",
-    title: "Heroes in Action",
-    description: "John. Lonnie. Adonis. Alani. One city. One night that changes the universe forever.",
-    image: "/images/story%20books/heros%20in%20action.png",
-    rating: "T+",
-    pages: 80,
-    accent: "oklch(0.62 0.22 42)",
-    featured: false,
-  },
-  {
-    id: 5,
-    series: "BRIO & LAVIQUE",
-    issue: "#001",
-    title: "Built Different",
-    description: "Lonnie and Alani. The engineer and the phantom. The city's most unlikely partnership.",
+    series: "CRESTVIEW — VOLUME 1",
+    issue: "#004",
+    title: "Coming Soon",
+    description: "Alani documents the impossible. Adonis learns what phase-shifting costs. Lonnie tries to go back to normal. The AI keeps counting down.",
     image: "/images/story%20books/brio%20and%20lavique3.png",
     rating: "T+",
-    pages: 56,
+    pages: 0,
     accent: "oklch(0.62 0.22 42)",
     featured: false,
-  },
-  {
-    id: 6,
-    series: "FORCE",
-    issue: "#001",
-    title: "Adonis Rising",
-    description: "When Adonis hits, the ground remembers. Force's origin — raw, unfiltered, unstoppable.",
-    image: "/images/force/Gemini_Generated_Image_gbncb7gbncb7gbnc.png",
-    rating: "T+",
-    pages: 52,
-    accent: "oklch(0.75 0.15 220)",
-    featured: false,
+    free: false,
   },
 ];
 
@@ -229,7 +209,7 @@ export default function ComicsSection() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-0.5" style={{ background: "oklch(0.88 0.28 142)" }} />
-              <span className="issue-badge">The Collection</span>
+              <span className="issue-badge">The Comics</span>
             </div>
             <h2
               style={{
@@ -302,7 +282,7 @@ export default function ComicsSection() {
 
                 {/* Content overlay */}
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <div className="stat-label mb-2">Vigil Universe • Crossover Event</div>
+                  <div className="stat-label mb-2">Crestview — Volume 1 • Issue #001</div>
                   <h3
                     style={{
                       fontFamily: "'Bebas Neue', sans-serif",
@@ -312,7 +292,7 @@ export default function ComicsSection() {
                       letterSpacing: "0.04em",
                     }}
                   >
-                    CONVERGENCE
+                    THE ACCIDENT
                   </h3>
                   <p
                     className="mt-2 mb-4"
@@ -323,11 +303,10 @@ export default function ComicsSection() {
                       lineHeight: 1.6,
                     }}
                   >
-                    The crossover event of the year. Every hero. Every threat.
-                    One city on the brink.
+                    Issue #1 is free. Always. Read the story that started everything.
                   </p>
                   <button className="btn-vigil-primary w-full">
-                    Read Issue
+                    Read Free
                   </button>
                 </div>
               </div>

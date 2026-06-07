@@ -7,31 +7,7 @@
  */
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-const CITY_PANEL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663714891856/9eqp4adEMH963JomsoYtbu/vigil-city-panel-aviY4vZnKRhXbB4NFtRg2j.webp";
-
-const teamMembers = [
-  {
-    name: "Marcus Webb",
-    role: "Founder & Lead Writer",
-    bio: "Born and raised in the city. Marcus started Vigil Studios to tell the stories he never saw growing up.",
-    initials: "MW",
-    color: "oklch(0.88 0.28 142)",
-  },
-  {
-    name: "Deja Okafor",
-    role: "Art Director",
-    bio: "Deja's ink-heavy style defines the visual language of the Vigil Universe.",
-    initials: "DO",
-    color: "oklch(0.62 0.22 42)",
-  },
-  {
-    name: "Tyrese Kim",
-    role: "Universe Architect",
-    bio: "The lore master. Tyrese ensures every storyline connects and every character has depth.",
-    initials: "TK",
-    color: "oklch(0.75 0.15 220)",
-  },
-];
+const CITY_PANEL = "/images/bg/city-panel.webp";
 
 export default function AboutSection() {
   const { ref: titleRef, visible: titleVisible } = useScrollReveal();
@@ -88,7 +64,7 @@ export default function AboutSection() {
             >
               <img
                 src={CITY_PANEL}
-                alt="The City"
+                alt="The Neighborhood"
                 className="w-full h-full object-cover"
               />
               <div
@@ -112,7 +88,7 @@ export default function AboutSection() {
                     letterSpacing: "0.08em",
                   }}
                 >
-                  EST. 2021 — THE CITY
+                  EST. 2022 — DENVER, CO
                 </div>
               </div>
             </div>
@@ -127,9 +103,7 @@ export default function AboutSection() {
                   marginBottom: "1rem",
                 }}
               >
-                Vigil Studios was founded on a simple belief: the city deserves
-                its own heroes. Not gods from the sky. Not billionaires in
-                armor. Heroes from the block.
+                North20 Studios is an independent entertainment and education company. Vigil Studios is our superhero imprint — original comics featuring Black professionals who are also heroes.
               </p>
               <p
                 style={{
@@ -139,9 +113,7 @@ export default function AboutSection() {
                   lineHeight: 1.8,
                 }}
               >
-                We create original superhero comics rooted in urban culture,
-                authentic representation, and stories that resonate with
-                communities that have long been overlooked by mainstream comics.
+                The first issue is always free. The platform is always owned. The characters always look like the neighborhoods they come from.
               </p>
             </div>
 
@@ -153,7 +125,7 @@ export default function AboutSection() {
                 borderLeft: "4px solid oklch(0.88 0.28 142)",
               }}
             >
-              <div className="stat-label mb-2">Our Mission</div>
+              <div className="stat-label mb-2">The Mission</div>
               <blockquote
                 style={{
                   fontFamily: "'Oswald', sans-serif",
@@ -164,92 +136,13 @@ export default function AboutSection() {
                   letterSpacing: "0.02em",
                 }}
               >
-                "To give the streets a mythology they can call their own."
+                "Original stories. Owned platform. Characters built from the community up."
               </blockquote>
             </div>
           </div>
 
-          {/* Right: Team */}
+          {/* Right: Signup */}
           <div>
-            <h3
-              className="mb-6"
-              style={{
-                fontFamily: "'Oswald', sans-serif",
-                fontSize: "1.1rem",
-                fontWeight: 600,
-                letterSpacing: "0.15em",
-                color: "oklch(0.62 0.22 42)",
-                textTransform: "uppercase",
-              }}
-            >
-              The Team
-            </h3>
-
-            <div className="flex flex-col gap-4">
-              {teamMembers.map((member, i) => {
-                const { ref, visible } = useScrollReveal();
-                return (
-                  <div
-                    key={i}
-                    ref={ref}
-                    className={`comic-card p-5 flex gap-4 items-start ${visible ? "reveal-visible" : "reveal-hidden"}`}
-                    style={{ transitionDelay: `${i * 120}ms` }}
-                  >
-                    {/* Avatar */}
-                    <div
-                      className="flex-shrink-0 w-12 h-12 flex items-center justify-center font-bold"
-                      style={{
-                        background: `${member.color.replace(")", " / 0.15)")}`,
-                        border: `2px solid ${member.color}`,
-                        fontFamily: "'Bebas Neue', sans-serif",
-                        fontSize: "1rem",
-                        color: member.color,
-                        letterSpacing: "0.05em",
-                      }}
-                    >
-                      {member.initials}
-                    </div>
-
-                    <div className="flex-1 min-w-0">
-                      <div
-                        style={{
-                          fontFamily: "'Oswald', sans-serif",
-                          fontSize: "1rem",
-                          fontWeight: 600,
-                          color: "oklch(0.96 0.003 280)",
-                          letterSpacing: "0.04em",
-                        }}
-                      >
-                        {member.name}
-                      </div>
-                      <div
-                        className="mb-2"
-                        style={{
-                          fontFamily: "'IBM Plex Mono', monospace",
-                          fontSize: "0.65rem",
-                          color: member.color,
-                          letterSpacing: "0.15em",
-                          textTransform: "uppercase",
-                        }}
-                      >
-                        {member.role}
-                      </div>
-                      <p
-                        style={{
-                          fontFamily: "'IBM Plex Mono', monospace",
-                          fontSize: "0.75rem",
-                          color: "oklch(0.6 0.01 280)",
-                          lineHeight: 1.6,
-                        }}
-                      >
-                        {member.bio}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-
             {/* Join CTA */}
             <div
               className="mt-8 p-6 text-center"
@@ -267,7 +160,7 @@ export default function AboutSection() {
                   marginBottom: "0.5rem",
                 }}
               >
-                JOIN THE VIGIL
+                STAY IN THE LOOP
               </div>
               <p
                 className="mb-4"
@@ -278,8 +171,7 @@ export default function AboutSection() {
                   lineHeight: 1.6,
                 }}
               >
-                Get early access to new issues, behind-the-scenes content, and
-                exclusive character reveals.
+                New issues. Behind-the-scenes. First access. Drop your email and we'll keep you in it.
               </p>
               <div className="flex gap-3 justify-center flex-wrap">
                 <input

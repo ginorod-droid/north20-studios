@@ -7,63 +7,56 @@
  */
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-const ABOUT_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663714891856/9eqp4adEMH963JomsoYtbu/vigil-about-bg-gf8VjhbxvGTieLyuo3gxAn.webp";
+const ABOUT_BG = "/images/bg/about-bg.webp";
 
 const loreEntries = [
   {
-    year: "YEAR 01",
-    title: "The Awakening",
+    year: "VOLUME 1 — Issues 1–6",
+    title: "The Accident",
     description:
-      "Across the city, ordinary people begin manifesting extraordinary abilities. Scientists call it a mutation. The streets call it a gift — or a curse.",
+      "An explosion at a Crestview Development site changes four people who had nothing to do with each other. The AI that caused it is still running. Nobody knows what it was building.",
     accent: "oklch(0.88 0.28 142)",
   },
   {
-    year: "YEAR 02",
-    title: "The First Vigil",
+    year: "VOLUME 2 — Issues 7–12",
+    title: "The Reckoning",
     description:
-      "Flava steps forward as the first public hero. Not everyone welcomes him. The city is divided between hope and fear.",
+      "The government moves in. The team fractures. Marcus Hill gets his full story. Someone almost doesn't come back.",
     accent: "oklch(0.62 0.22 42)",
   },
   {
-    year: "YEAR 03",
-    title: "The Shadow Network",
+    year: "VOLUME 3 — Issues 13–18",
+    title: "The Convergence",
     description:
-      "A criminal organization with powers of their own emerges from the underground. The stakes have never been higher.",
+      "Everything collides. The henchmen are picked apart. John faces Marcus. The AI makes its biggest move. Someone almost crosses a line they can't come back from.",
     accent: "oklch(0.88 0.28 142)",
-  },
-  {
-    year: "YEAR 04",
-    title: "Convergence",
-    description:
-      "Heroes from every corner of the city unite for the first time. The Vigil Universe expands — and so does the threat.",
-    accent: "oklch(0.62 0.22 42)",
   },
 ];
 
 const pillars = [
   {
     icon: "🏙️",
-    title: "Urban Roots",
+    title: "Rooted in the Neighborhood",
     description:
-      "Every character, every story is grounded in the real textures of city life — the block, the hustle, the community.",
+      "The story starts on the block. Ms. Ruth's corner market. Mr. Ramirez's barbershop. Real life that never appears in Crestview's advertisements.",
   },
   {
     icon: "⚡",
-    title: "Original Powers",
+    title: "The AI",
     description:
-      "No capes borrowed from mythology. Our heroes' abilities emerge from their environments, their trauma, their will.",
+      "Not built. Found. An ancient AI discovered beneath a city neighborhood, with a corporation constructed around it to keep it alive and keep it secret.",
   },
   {
     icon: "✊",
-    title: "Real Representation",
+    title: "Black Professionals",
     description:
-      "The faces in Vigil Studios look like the neighborhoods they protect. Diversity isn't a checkbox — it's the foundation.",
+      "An engineer. A teacher. A doctor. A soldier. The Prime-Man Initiative isn't about what they can do. It's about who they already were.",
   },
   {
     icon: "📖",
-    title: "Deep Lore",
+    title: "18 Issues. One Story.",
     description:
-      "A fully realized universe with interconnected storylines, factions, and a history that rewards long-time readers.",
+      "Three volumes. A fully mapped universe. Nobody dies. Everybody has unfinished business. The party keeps going.",
   },
 ];
 
@@ -107,7 +100,7 @@ export default function UniverseSection() {
         >
           <div className="flex items-center gap-3 mb-4">
             <div className="w-12 h-0.5" style={{ background: "oklch(0.88 0.28 142)" }} />
-            <span className="issue-badge">World Building</span>
+            <span className="issue-badge">Crestview Universe</span>
           </div>
           <h2
             style={{
@@ -118,7 +111,7 @@ export default function UniverseSection() {
               color: "oklch(0.96 0.003 280)",
             }}
           >
-            THE VIGIL
+            THE CRESTVIEW
             <br />
             <span style={{ color: "oklch(0.88 0.28 142)" }} className="text-glow-green">
               UNIVERSE
